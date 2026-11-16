@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1067" width="800" height="1067">
+  <defs>
+    <linearGradient id="pgrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#EBE4DD" />
+      <stop offset="50%" stop-color="#D5C7B8" />
+      <stop offset="100%" stop-color="#141211" />
+    </linearGradient>
+    <radialGradient id="pglow" cx="50%" cy="35%" r="45%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#EBE4DD" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+
+  <rect width="100%" height="100%" fill="url(#pgrad)" />
+  <circle cx="400" cy="380" r="300" fill="url(#pglow)" />
+  <rect x="30" y="30" width="740" height="1007" fill="none" stroke="rgba(255,255,255,0.25)" stroke-width="1" />
+
+  <!-- Stylized Artisan Portrait Silhouette -->
+  <g transform="translate(400, 430)" text-anchor="middle">
+    <!-- Head / Hair Aura -->
+    <ellipse cx="0" cy="-120" rx="90" ry="115" fill="#141211" opacity="0.85" />
+    <path d="M -85,-110 C -110,-40 -120,80 -130,220 L 130,220 C 120,80 110,-40 85,-110 Z" fill="#141211" opacity="0.9" />
+    <!-- Fine gold necklace accent -->
+    <path d="M -35,5 C -15,35 15,35 35,5" fill="none" stroke="#C9A982" stroke-width="2.5" />
+    <!-- Hands holding precision tool -->
+    <ellipse cx="0" cy="90" rx="35" ry="12" fill="none" stroke="#D4D8DC" stroke-width="1.5" />
+  </g>
+
+  <!-- Framing Typography -->
+  <text x="60" y="80" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" letter-spacing="4" fill="rgba(255,255,255,0.7)">NICOLE · MASTER NAIL ARTISAN</text>
+  <text x="740" y="80" text-anchor="end" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" letter-spacing="3" fill="#C9A982">THE ATELIER</text>
+
+  <g transform="translate(60, 940)">
+    <text x="0" y="0" font-family="'Cormorant Garamond', Georgia, serif" font-size="36" font-style="italic" fill="#FFFFFF">"Healthy natural nails will always be the standard."</text>
+    <text x="0" y="32" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" letter-spacing="2" fill="rgba(255,255,255,0.7)">FOUNDER &amp; LEAD ARTISAN · @NAILZBYNICCI</text>
+  </g>
+</svg>

@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1067" width="800" height="1067">
+  <defs>
+    <linearGradient id="grad-nicci-003" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#BFCCB0" />
+      <stop offset="60%" stop-color="#D2C7DF" stop-opacity="0.85" />
+      <stop offset="100%" stop-color="#141211" stop-opacity="0.9" />
+    </linearGradient>
+    <radialGradient id="glow-nicci-003" cx="50%" cy="40%" r="50%">
+      <stop offset="0%" stop-color="#D7DBDF" stop-opacity="0.45" />
+      <stop offset="100%" stop-color="#BFCCB0" stop-opacity="0" />
+    </radialGradient>
+    <filter id="grain-nicci-003">
+      <feTurbulence type="fractalNoise" baseFrequency="0.8" numOctaves="3" stitchTiles="stitch" />
+      <feColorMatrix type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.08 0" />
+      <feBlend mode="multiply" />
+    </filter>
+  </defs>
+
+  <!-- Editorial Background Canvas -->
+  <rect width="100%" height="100%" fill="url(#grad-nicci-003)" />
+  <circle cx="400" cy="420" r="320" fill="url(#glow-nicci-003)" />
+  
+  <!-- Subtle Architectural Framing Lines -->
+  <rect x="30" y="30" width="740" height="1007" fill="none" stroke="rgba(255,255,255,0.18)" stroke-width="1" />
+  <rect x="42" y="42" width="716" height="983" fill="none" stroke="rgba(201,169,130,0.22)" stroke-width="0.5" />
+
+  <!-- Abstract Hand & Nail Sculptural Silhouette -->
+  <g transform="translate(400, 480)" text-anchor="middle">
+    <!-- Stylized Nail Tip Curves -->
+    <path d="M -90,-160 C -90,-250 -40,-310 0,-330 C 40,-310 90,-250 90,-160 C 90,-60 60,60 0,70 C -60,60 -90,-60 -90,-160 Z" 
+          fill="none" stroke="#D7DBDF" stroke-width="2" opacity="0.75" />
+    <path d="M -60,-150 C -60,-220 -25,-260 0,-280 C 25,-260 60,-220 60,-150 C 60,-70 40,30 0,40 C -40,30 -60,-70 -60,-150 Z" 
+          fill="#BFCCB0" fill-opacity="0.25" stroke="rgba(255,255,255,0.4)" stroke-width="1" />
+    
+    <!-- Luminous Apex Glaze Line -->
+    <path d="M -15,-270 Q 0,-285 15,-270 Q 0,-150 0,30" fill="none" stroke="#FFFFFF" stroke-width="2.5" opacity="0.6" stroke-linecap="round" />
+    
+    <!-- Fine Ring Accent -->
+    <circle cx="0" cy="120" r="18" fill="none" stroke="#C9A982" stroke-width="2.5" />
+  </g>
+
+  <!-- Editorial Top Metadata -->
+  <text x="60" y="80" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" letter-spacing="4" fill="rgba(255,255,255,0.7)" text-transform="uppercase">NAILZ BY NICCI · STUDIO ARCHIVE</text>
+  <text x="740" y="80" text-anchor="end" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" letter-spacing="3" fill="rgba(255,255,255,0.7)">NICCI-003</text>
+
+  <!-- Editorial Bottom Typography Block -->
+  <g transform="translate(60, 930)">
+    <text x="0" y="0" font-family="'Cormorant Garamond', Georgia, serif" font-size="34" font-weight="500" fill="#FFFFFF" letter-spacing="-0.5">ETHEREAL AURA CAPSULE</text>
+    <text x="0" y="32" font-family="'Plus Jakarta Sans', sans-serif" font-size="13" letter-spacing="2" fill="rgba(255,255,255,0.75)" text-transform="uppercase">Sage Bloom · Silver Linework</text>
+  </g>
+
+  <line x1="60" y1="980" x2="740" y2="980" stroke="rgba(255,255,255,0.15)" stroke-width="1" />
+  <text x="60" y="1005" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" letter-spacing="3" fill="#C9A982">RUSSIAN MANICURE · BIAB APEX ARCHITECTURE</text>
+  <text x="740" y="1005" text-anchor="end" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" letter-spacing="2" fill="rgba(255,255,255,0.5)">PRIVATE SUITE</text>
+</svg>

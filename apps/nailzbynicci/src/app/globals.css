@@ -1,0 +1,81 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-ink: #0E0D10;
+  --color-fog: #2A2B30;
+  --color-fog-light: #666666;
+  --color-blossom: #FF007A;
+  --color-magenta: #FF007A;
+  --color-concrete: #EFEFEF;
+  --color-concrete-dark: #E2E2E2;
+  --color-emerald: #1F5A45;
+  --color-blood: #7A1020;
+  --color-chrome: #111111;
+  --color-white: #FFFFFF;
+}
+
+html {
+  background-color: #EFEFEF;
+  color: #0E0D10;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: #EFEFEF;
+  color: #0E0D10;
+  overflow-x: hidden;
+  position: relative;
+}
+
+::selection {
+  background-color: #FF007A;
+  color: #FFFFFF;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #EFEFEF;
+}
+::-webkit-scrollbar-thumb {
+  background: #111111;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #FF007A;
+}
+
+/* Luxury Easing Utility */
+.ease-luxury {
+  transition-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Neon Pink Glow for Readymag Script */
+.neon-pink-glow {
+  text-shadow: 0 0 10px rgba(255, 0, 122, 0.6), 0 0 20px rgba(255, 0, 122, 0.35);
+}
+
+/* Readymag Brutalist Card & Border Utilities */
+.readymag-border {
+  border: 1.5px solid #0E0D10;
+}
+
+.readymag-card {
+  background-color: #FFFFFF;
+  border: 1.5px solid #0E0D10;
+  box-shadow: 4px 4px 0px #0E0D10;
+}
+
+.story-card-white {
+  background-color: #FFFFFF;
+  color: #0E0D10;
+  border: 1.5px solid #0E0D10;
+  box-shadow: 4px 4px 0px #0E0D10;
+}
