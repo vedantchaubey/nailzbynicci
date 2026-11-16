@@ -38,13 +38,22 @@ const siteUrl = getSiteUrl()
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: 'nailzbynicci — Deine Alternative Nail Artistin | Münster',
+    default: 'nailzbynicci (nailsbynicci) — Offizielle Website · Alternative Nail Artist Münster',
     template: '%s | nailzbynicci — Münster',
   },
   description:
-    'Nicole (@nailzbynicci) — Deine Alternative Nail Artistin in Münster. 100% Aprés Gel-X, Gothic Cyber-Chrome, Liquid Metal 3D Art & handgefertigte Luxury Press-On Sets. Buche direkt per Instagram DM.',
+    'Offizielle Website von Nicole (@nailzbynicci / nailsbynicci) — Deine Alternative Nail Artistin in Münster. 100% Aprés Gel-X, Gothic Cyber-Chrome, Liquid Metal 3D Art & handgefertigte Luxury Press-On Sets. Buche direkt per Instagram DM.',
   keywords: [
     'nailzbynicci',
+    'nailsbynicci',
+    'nails by nicci',
+    'nailz by nicci',
+    'nailsbynicci website',
+    'nailzbynicci website',
+    'nailzbynicci offizielle website',
+    'nails by nicci münster',
+    'nicole nailzbynicci',
+    'nicole nailsbynicci',
     'Nail Artist Münster',
     'Nagelstudio Münster',
     'Alternative Nail Artist',
@@ -58,6 +67,7 @@ export const metadata: Metadata = {
     'Custom Press-Ons handgemacht',
     'Nicole Münster Nails',
     'Nail Art NRW',
+    'niccicatt',
   ],
   authors: [{ name: 'Nicole | @nailzbynicci', url: 'https://www.instagram.com/nailzbynicci' }],
   creator: 'Nicole (@nailzbynicci)',
@@ -78,11 +88,11 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: 'nailzbynicci — Deine Alternative Nail Artistin | Münster',
+    title: 'nailzbynicci (nailsbynicci) — Deine Alternative Nail Artistin | Münster',
     description:
       'Privates Nagelatelier & Alternative Nail Architecture von Nicole in Münster. 100% Aprés Gel-X, Cyber-Chrome, Liquid Metal Art & bespoke Press-Ons.',
     url: siteUrl,
-    siteName: 'nailzbynicci',
+    siteName: 'nailzbynicci (nailsbynicci) | Offizielle Website',
     locale: 'de_DE',
     alternateLocale: ['en_US'],
     type: 'website',
@@ -97,7 +107,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'nailzbynicci — Alternative Nail Artist | Münster',
+    title: 'nailzbynicci (nailsbynicci) — Alternative Nail Artist | Münster',
     description:
       'Bespoke 100% Aprés Gel-X nail architecture & custom press-on sets by Nicole in Münster, Germany.',
     images: ['/images/gallery/nicci-001.webp'],
@@ -124,13 +134,47 @@ const jsonLd = {
   '@context': 'https://schema.org',
   '@graph': [
     {
+      '@type': 'WebSite',
+      '@id': `${siteUrl}/#website`,
+      name: 'nailzbynicci',
+      alternateName: [
+        'nailsbynicci',
+        'Nails by Nicci',
+        'Nailz by Nicci',
+        'nailzbynicci Website',
+        'nailsbynicci Website',
+        'nailzbynicci offizielle Website',
+        'nailzbynicci Münster',
+        'nailsbynicci Münster',
+      ],
+      url: siteUrl,
+      description:
+        'Offizielle Webpräsenz und Portfolio von Nicole (@nailzbynicci / nailsbynicci) — Alternative Nail Artist in Münster.',
+      inLanguage: ['de', 'en'],
+      publisher: {
+        '@id': `${siteUrl}/#salon`,
+      },
+    },
+    {
       '@type': ['NailSalon', 'BeautySalon', 'LocalBusiness'],
       '@id': `${siteUrl}/#salon`,
       name: 'nailzbynicci',
-      alternateName: ['Nailz by Nicci', 'Nicole Nail Artist Münster'],
+      alternateName: [
+        'nailsbynicci',
+        'Nails by Nicci',
+        'Nailz by Nicci',
+        'Nicole Nail Artist Münster',
+        'nailzbynicci Münster',
+        'nailsbynicci Münster',
+        'niccicatt',
+      ],
       description:
         'Privates Nagelatelier & Alternative Nail Architecture von Nicole in Münster. 100% Aprés Gel-X Modellagen, Gothic Cyber-Chrome, Liquid Armor 3D Art & bespoke handgefertigte Press-On Sets.',
       url: siteUrl,
+      mainEntityOfPage: {
+        '@type': 'WebPage',
+        '@id': siteUrl,
+      },
       image: `${siteUrl}/images/gallery/nicci-001.webp`,
       priceRange: '€€ (50€ - 115€)',
       currenciesAccepted: 'EUR',

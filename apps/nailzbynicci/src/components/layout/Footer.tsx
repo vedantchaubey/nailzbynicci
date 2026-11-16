@@ -178,7 +178,7 @@ export const Footer: React.FC = () => {
 
         {/* Bottom Bar: Legal & Attribution */}
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs font-mono text-white/60 gap-4">
-          <p>© {new Date().getFullYear()} Nicole · nailzbynicci · Münster, Germany.</p>
+          <p>© {new Date().getFullYear()} Nicole · nailzbynicci (nailsbynicci) · Offizielle Website · Münster, Germany.</p>
 
           <div className="flex items-center gap-6">
             <Link href="/sitemap" className="hover:text-magenta transition-colors">

@@ -49,6 +49,18 @@ export const faqs: FAQItem[] = [
     },
   },
   {
+    id: 'faq-website',
+    category: 'booking',
+    question: {
+      de: 'Hat nailzbynicci (nailsbynicci) eine offizielle Website?',
+      en: 'Does nailzbynicci (nailsbynicci) have an official website?',
+    },
+    answer: {
+      de: 'Ja! Die offizielle Website von Nicole (@nailzbynicci / nailsbynicci) ist https://nailzbynicci.vercel.app. Hier findest du das vollständige Portfolio, alle 4 Preis-Tiers mit interaktivem Rechner, die Aprés Gel-X Studio-Regeln sowie den Bestellablauf für handgefertigte Press-Ons. Terminanfragen erfolgen weiterhin persönlich via Instagram DM.',
+      en: 'Yes! The official website for Nicole (@nailzbynicci / nailsbynicci) is https://nailzbynicci.vercel.app. Here you can explore her complete portfolio, all 4 pricing tiers with an interactive calculator, Aprés Gel-X studio policies, and order custom reusable press-ons. Bookings remain personal via Instagram DM.',
+    },
+  },
+  {
     id: 'faq-4',
     category: 'booking',
     question: {

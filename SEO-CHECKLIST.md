@@ -1,6 +1,14 @@
 # SEO-CHECKLISTE FÜR NICOLE (@nailzbynicci)
 **Ziel:** Nr. 1 Anlaufstelle für alternatives Nageldesign in Münster & Top-Ergebnis für Custom Press-Ons in ganz Deutschland.  
-**Website:** `https://nailzbynicci.vercel.app`
+**Offizielle Website:** `https://nailzbynicci.vercel.app`
+
+> ⚠️ **WICHTIGER HINWEIS: WARUM GOOGLE SAGT "HAT KEINE WEBSITE" & DIE 2-MINUTEN-LÖSUNG**  
+> Wenn man auf Google nach `nailsbynicci` (oder `nailzbynicci`) sucht und Google anzeigt: *"Das Unternehmen hat keine Website"*, liegt das **ausschließlich** daran, dass im Google Maps / Google Unternehmensprofil bisher kein Website-Link hinterlegt war (bzw. zuvor nur der alte Readymag-Link).  
+> **Sofort-Fix:**  
+> 1. Öffne dein Google Unternehmensprofil auf [business.google.com](https://business.google.com) (oder suche bei Google nach deinem Profil und klicke auf "Profil bearbeiten").  
+> 2. Trage im Feld **Website** exakt ein: `https://nailzbynicci.vercel.app`  
+> 3. Trage `https://nailzbynicci.vercel.app` in deine Instagram-Bio (`@nailzbynicci`) ein.  
+> Sobald du das speicherst, verschwindet die Google-Meldung und wird durch den offiziellen **"Website"**-Button ersetzt. Die neue Website enthält nun auch alle Such-Synonyme (inklusive `nailsbynicci` mit "s") und `WebSite`-Schema, damit Google die Domain sofort verknüpft!
 
 ---
 
