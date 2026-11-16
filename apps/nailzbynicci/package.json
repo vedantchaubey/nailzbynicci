@@ -22,6 +22,7 @@
     "@hookform/resolvers": "^3.9.1",
     "clsx": "^2.1.1",
     "tailwind-merge": "^2.5.4",
+    "lucide-react": "^0.454.0",
     "react-intersection-observer": "^9.13.1",
     "sharp": "^0.33.5"
   },
