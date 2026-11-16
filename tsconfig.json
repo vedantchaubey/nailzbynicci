@@ -1,16 +1,13 @@
-// tsconfig.json
 {
   "extends": "./tsconfig.base.json",
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
-      "@ticketpass/shared": ["packages/shared/src"],
-      "@ticketpass/shared/*": ["packages/shared/src/*"]
+      "@/*": ["apps/nailzbynicci/src/*"],
+      "@/data/*": ["apps/nailzbynicci/data/*"]
     }
   },
   "references": [
-    { "path": "./packages/shared" },
-    { "path": "./apps/backend" },
-    { "path": "./apps/frontend" }
+    { "path": "./apps/nailzbynicci" }
   ]
 }

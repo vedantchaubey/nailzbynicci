@@ -25,9 +25,6 @@ pnpm-debug.log*
 lerna-debug.log*
 *.log
 
-# Prisma generated artifacts
-apps/backend/prisma/generated/
-
 # OS and Editor files
 .DS_Store
 Thumbs.db
@@ -44,4 +41,5 @@ coverage/
 .turbo/
 .cache/
 scratch/
-ticketpass.zip
+*.pyc
+__pycache__/
