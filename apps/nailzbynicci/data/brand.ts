@@ -31,7 +31,7 @@ export const brand = {
   personalInstagramUrl: 'https://www.instagram.com/niccicatt',
   
   // Placeholders for legal / direct contact
-  email: 'hello@nailzbynicci.de', // ⚠️ Placeholder for Impressum
+  email: '', // ⚠️ Managed via Instagram DM / disclosed upon booking
   whatsappNumber: '', // ⚠️ Managed in DM
   
   // Final Verified Policies (from Nicci's Official Announcements)

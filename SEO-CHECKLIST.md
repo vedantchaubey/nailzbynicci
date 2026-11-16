@@ -1,19 +1,19 @@
 # SEO-CHECKLISTE FÜR NICOLE (@nailzbynicci)
 **Ziel:** Nr. 1 Anlaufstelle für alternatives Nageldesign in Münster & Top-Ergebnis für Custom Press-Ons in ganz Deutschland.  
-**Website:** `https://nailzbynicci.de` (oder `https://nailzbynicci.vercel.app`)
+**Website:** `https://nailzbynicci.vercel.app`
 
 ---
 
 ## 📌 Schritt 1: Google Business Profile (Google Maps) einrichten
 Da du ein privates Atelier führst, richten wir dein Profil als **Dienstleistungsunternehmen ohne sichtbare Privatadresse** (Service-Area Business) ein. Kunden sehen Münster & Umgebung, aber nicht deine private Hausnummer.
 
-1. Gehe auf [google.de/business](https://www.google.de/business) und melde dich mit deinem Google-Konto an.
+1. Gehe auf [business.google.com](https://business.google.com) und melde dich mit deinem Google-Konto an.
 2. **Unternehmensname:** `nailzbynicci — Alternative Nail Artist`
 3. **Hauptkategorie:** `Nagelstudio` (oder `Nageldesignerin`).  
    *Zusatzkategorie:* `Künstlerin`.
 4. **Standort-Option:** Wähle *"Nein, ich biete Kundenbesuche oder Lieferungen an"* -> Deine private Adresse bleibt verborgen.
 5. **Einzugsgebiet:** Trage Münster ein (inkl. der Postleitzahlen: 48143, 48149, 48151, 48153, 48155, 48159, 48161 etc.).
-6. **Website:** `https://nailzbynicci.de`
+6. **Website:** `https://nailzbynicci.vercel.app`
 7. **Öffnungszeiten:** z.B. Montag bis Samstag 10:00 – 20:00 Uhr (Nur nach Vereinbarung).
 8. **Leistungen & Preise hinzufügen:**
    - Aprés Gel-X Neumodellage (ab 50 €)
@@ -30,7 +30,7 @@ Da du ein privates Atelier führst, richten wir dein Profil als **Dienstleistung
 ---
 
 ## 📌 Schritt 2: Social-Media-Bios & Links aktualisieren
-Ersetze die alte Readymag-URL überall durch die neue schnelle Domain.
+Ersetze die alte Readymag-URL überall durch die neue schnelle Web-Adresse.
 
 - **Instagram (@nailzbynicci):**
   - Name-Feld: `Nicole | Alternative Nail Artist Münster` (Wichtig: Wörter im Name-Feld werden von Instagrams Suchfunktion durchsucht!)
@@ -38,9 +38,9 @@ Ersetze die alte Readymag-URL überall durch die neue schnelle Domain.
     `⛓️ 100% Aprés Gel-X · Cyber-Chrome · 3D Art`  
     `📍 Münster, Germany · Termine via DM`  
     `📦 Handcrafted Press-Ons (Versand DE)`  
-    `🔗 nailzbynicci.de`
+    `🔗 https://nailzbynicci.vercel.app`
 - **Persönliches Profil (@niccicatt):**
-  - Füge `nail artist @nailzbynicci · nailzbynicci.de` in die Bio ein.
+  - Füge `nail artist @nailzbynicci · https://nailzbynicci.vercel.app` in die Bio ein.
 - **TikTok & Pinterest:**
   - Gleicher Name, gleiche Website-URL und konsistente Bio.
 
@@ -59,9 +59,9 @@ Google liebt echte Rezensionen. Frage jede zufriedene Kundin nach ihrem Termin n
 
 ## 📌 Schritt 4: Google Search Console & Bing Webmaster Tools
 1. Öffne die [Google Search Console](https://search.google.com/search-console).
-2. Füge `https://nailzbynicci.de` als Domain oder URL-Präfix hinzu.
+2. Füge `https://nailzbynicci.vercel.app` als URL-Präfix hinzu.
 3. Klicke links auf **Sitemaps** und trage `sitemap.xml` ein -> Klicke auf **Senden**.
-4. Innerhalb von 48 Stunden indexiert Google alle 40+ Seiten, Ratgeber und Galerien.
+4. Innerhalb von 48 Stunden indexiert Google alle 56 Seiten, Ratgeber und Galerien.
 5. Wiederhole den Vorgang bei den [Bing Webmaster Tools](https://www.bing.com/webmasters).
 
 ---

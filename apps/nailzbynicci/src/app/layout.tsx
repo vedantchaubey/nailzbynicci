@@ -31,8 +31,9 @@ import { Preloader } from '@/components/layout/Preloader'
 import { FloatingBookButton } from '@/components/ui/FloatingBookButton'
 import { SmoothScrollProvider } from '@/lib/lenis'
 import { LanguageProvider } from '@/lib/languageContext'
+import { getSiteUrl } from '@/lib/siteUrl'
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://nailzbynicci.vercel.app'
+const siteUrl = getSiteUrl()
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
@@ -69,8 +70,11 @@ export const metadata: Metadata = {
   alternates: {
     canonical: siteUrl,
     languages: {
+      'de': siteUrl,
+      'en': `${siteUrl}/en`,
       'de-DE': siteUrl,
-      'en-US': siteUrl,
+      'en-US': `${siteUrl}/en`,
+      'x-default': siteUrl,
     },
   },
   openGraph: {

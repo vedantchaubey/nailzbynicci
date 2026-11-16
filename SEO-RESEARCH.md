@@ -1,4 +1,4 @@
-# SEO-RESEARCH: nailzbynicci.de
+# SEO-RESEARCH: nailzbynicci (https://nailzbynicci.vercel.app)
 **Target:** Münster, NRW (Local Studio) & Germany (Custom Press-Ons)  
 **Client:** Nicole (@nailzbynicci) — Alternative Nail Artist  
 **Focus:** 100% Aprés Gel-X, Gothic Cyber-Chrome, Liquid Metal, Soft Kawaii & Luxury Press-Ons  

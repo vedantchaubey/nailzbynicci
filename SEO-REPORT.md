@@ -1,7 +1,7 @@
-# SEO-REPORT: nailzbynicci.de
+# SEO-REPORT: nailzbynicci (https://nailzbynicci.vercel.app)
 **Target:** Münster, NRW (Local Studio) & Germany (Custom Press-Ons)  
 **Client:** Nicole (@nailzbynicci) — Alternative Nail Artist  
-**Production URL:** `https://nailzbynicci.vercel.app` (Custom domain target: `https://nailzbynicci.de`)  
+**Production URL:** `https://nailzbynicci.vercel.app`  
 **Booking Action:** Instagram DM Only (`https://ig.me/m/nailzbynicci`)  
 **Report Date:** November 2026
 
@@ -85,9 +85,9 @@ We have transformed `nailzbynicci` into a high-authority, bilingual, search-opti
 
 ### Days 1 – 30: Indexing & Map Pack Setup
 - **Actions:**
-  1. Add `https://nailzbynicci.de` (or `.vercel.app`) to Google Search Console and submit `sitemap.xml`.
+  1. Add `https://nailzbynicci.vercel.app` to Google Search Console and submit `sitemap.xml`.
   2. Complete Google Business Profile setup (Service-Area Business in Münster).
-  3. Replace Readymag URL in Instagram bio (`@nailzbynicci` & `@niccicatt`).
+  3. Replace Readymag URL in Instagram bio (`@nailzbynicci` & `@niccicatt`) with `https://nailzbynicci.vercel.app`.
 - **Metrics to Track:**
   - Google Search Console total impressions (target: 500+ impressions/month).
   - Map Pack views in Münster.
@@ -115,8 +115,8 @@ We have transformed `nailzbynicci` into a high-authority, bilingual, search-opti
 ---
 
 ## 5. What Nicole / The User Still Needs to Provide
-1. **Custom Domain:** When ready, connect `nailzbynicci.de` in Vercel Project Domains.
-2. **Google Search Console Access:** Verify ownership via DNS TXT record or HTML tag.
-3. **Google Business Profile:** Verify the postal pin or video verification for Google Maps.
-4. **Impressum / Legal Details:** Update real address and legal representative name in `src/app/impressum/page.tsx` (currently clearly marked with legal placeholders per German § 5 TMG).
-5. **Client Retention Photos:** Save and tag future 4-week client return photos to showcase in the gallery.
+1. **Google Search Console Access:** Verify ownership of `https://nailzbynicci.vercel.app` and submit sitemap.
+2. **Google Business Profile:** Verify the postal pin or video verification for Google Maps as a Service-Area Business.
+3. **Impressum / Legal Details:** Update real address and legal representative name in `src/app/impressum/page.tsx` (currently clearly marked with legal placeholders per German § 5 TMG).
+4. **Client Retention Photos:** Save and tag future 4-week client return photos to showcase in the gallery.
+5. **Future Custom Domain:** When a real domain is bought later, setting `NEXT_PUBLIC_SITE_URL` in environment variables is the only edit needed.

@@ -6,6 +6,7 @@ import { notFound } from 'next/navigation'
 import { guideArticles } from '@/data/guides'
 import { Breadcrumbs } from '@/components/ui/Breadcrumbs'
 import { InstagramCTA } from '@/components/ui/InstagramCTA'
+import { getSiteUrl } from '@/lib/siteUrl'
 import { Clock, Calendar, User, ArrowLeft, ArrowRight, CheckCircle2 } from 'lucide-react'
 
 interface PageProps {
@@ -24,7 +25,8 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const article = guideArticles.find((a) => a.slugEn === params.slug)
   if (!article) return {}
 
-  const url = `https://nailzbynicci.de/en/guides/${article.slugEn}`
+  const siteUrl = getSiteUrl()
+  const url = `${siteUrl}/en/guides/${article.slugEn}`
 
   return {
     title: `${article.metaTitleEn} | nailzbynicci`,
@@ -32,8 +34,11 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     alternates: {
       canonical: `/en/guides/${article.slugEn}`,
       languages: {
+        'de': `/ratgeber/${article.slugDe}`,
+        'en': `/en/guides/${article.slugEn}`,
         'de-DE': `/ratgeber/${article.slugDe}`,
         'en-US': `/en/guides/${article.slugEn}`,
+        'x-default': `/ratgeber/${article.slugDe}`,
       },
     },
     openGraph: {
@@ -73,12 +78,14 @@ export default function EnglishGuideArticlePage({ params }: PageProps) {
     { name: article.titleEn, href: `/en/guides/${article.slugEn}` },
   ]
 
+  const siteUrl = getSiteUrl()
+
   const articleJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'Article',
     headline: article.titleEn,
     description: article.metaDescEn,
-    image: `https://nailzbynicci.de${article.heroImage}`,
+    image: `${siteUrl}${article.heroImage}`,
     datePublished: article.publishedAt,
     dateModified: article.publishedAt,
     author: {
@@ -91,12 +98,12 @@ export default function EnglishGuideArticlePage({ params }: PageProps) {
       name: 'nailzbynicci',
       logo: {
         '@type': 'ImageObject',
-        url: 'https://nailzbynicci.de/icon.svg',
+        url: `${siteUrl}/icon.svg`,
       },
     },
     mainEntityOfPage: {
       '@type': 'WebPage',
-      '@id': `https://nailzbynicci.de/en/guides/${article.slugEn}`,
+      '@id': `${siteUrl}/en/guides/${article.slugEn}`,
     },
   }
 

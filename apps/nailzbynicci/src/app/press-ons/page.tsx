@@ -8,6 +8,7 @@ import { useLanguage } from '@/lib/languageContext'
 import { LazyVideoCard } from '@/components/ui/LazyVideoCard'
 import { Breadcrumbs } from '@/components/ui/Breadcrumbs'
 import { InstagramCTA } from '@/components/ui/InstagramCTA'
+import { SITE_URL } from '@/lib/siteUrl'
 import { ArrowRight, Ruler, PackageCheck } from 'lucide-react'
 
 export default function PressOnsPage() {
@@ -47,7 +48,7 @@ export default function PressOnsPage() {
       {
         '@type': 'Product',
         name: 'Custom Reusable Press-On Nails (100% Aprés Gel-X)',
-        image: 'https://nailzbynicci.de/images/posters/Video-14378.webp',
+        image: `${SITE_URL}/images/posters/Video-14378.webp`,
         description:
           'Handcrafted custom reusable luxury press-on nails made from 100% Aprés Gel-X by Nicole in Münster. Includes full prep kit and tracked shipping within Germany.',
         brand: {
@@ -73,8 +74,8 @@ export default function PressOnsPage() {
         '@type': 'VideoObject',
         name: `${video.title} - Custom Gel-X Press-On Nails`,
         description: `Bespoke hand-painted ${video.style} luxury reusable press-on set by Nicole (@nailzbynicci).`,
-        thumbnailUrl: `https://nailzbynicci.de${video.poster}`,
-        contentUrl: `https://nailzbynicci.de${video.file}`,
+        thumbnailUrl: `${SITE_URL}${video.poster}`,
+        contentUrl: `${SITE_URL}${video.file}`,
         uploadDate: '2026-11-12T12:00:00Z',
       })),
     ],

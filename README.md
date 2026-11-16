@@ -14,11 +14,26 @@
 
 ## 🔗 Live Atelier & Deployment
 
-* **Production URL:** [https://nailzbynicci.vercel.app](https://nailzbynicci.vercel.app) (Custom domain: `nailzbynicci.de`)
+* **Production URL:** [https://nailzbynicci.vercel.app](https://nailzbynicci.vercel.app)
 * **Instagram Atelier:** [@nailzbynicci](https://instagram.com/nailzbynicci)
 * **Direct Booking DM:** [https://ig.me/m/nailzbynicci](https://ig.me/m/nailzbynicci)
 * **Sitemap:** [https://nailzbynicci.vercel.app/sitemap.xml](https://nailzbynicci.vercel.app/sitemap.xml)
 * **Robots Directives:** [https://nailzbynicci.vercel.app/robots.txt](https://nailzbynicci.vercel.app/robots.txt)
+
+---
+
+## 🌐 Dynamic URL & Domain Architecture
+
+* **Zero Hardcoded Domains:** There is no custom domain yet. The application does not hardcode, assume, or depend on any custom domain or country-code TLD.
+* **Single Source of Truth (`NEXT_PUBLIC_SITE_URL`):**
+  * All canonical URLs, XML sitemaps, robots.txt, Open Graph metadata, JSON-LD structured data schemas, and hreflang tags derive dynamically from `NEXT_PUBLIC_SITE_URL`.
+* **Automatic Fallbacks:**
+  * **Production:** Automatically resolves to `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}` (falling back to `https://nailzbynicci.vercel.app`).
+  * **Development:** Automatically resolves to `http://localhost:3000`.
+* **Future Domain Connection:**
+  * When a custom domain is acquired later, **updating `NEXT_PUBLIC_SITE_URL` in environment variables is the ONLY edit needed** across the entire project.
+* **Path-Based Localization:**
+  * Languages are path-based on the exact same host (`/` and `/de` for German, `/en` for English), so SEO and hreflang operate smoothly without separate country domains.
 
 ---
 

@@ -1,8 +1,9 @@
 import { MetadataRoute } from 'next'
 import { guideArticles } from '@/data/guides'
+import { getSiteUrl } from '@/lib/siteUrl'
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://nailzbynicci.vercel.app'
+  const baseUrl = getSiteUrl()
   const currentDate = new Date().toISOString()
 
   const staticRoutes: MetadataRoute.Sitemap = [

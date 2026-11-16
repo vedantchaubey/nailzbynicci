@@ -25,7 +25,7 @@ export default function ImpressumPage() {
             <h2 className="font-serif text-xl text-white mb-2">Kontakt</h2>
             <p>Instagram: <a href="https://www.instagram.com/nailzbynicci" target="_blank" rel="noopener noreferrer" className="text-blossom hover:underline">@nailzbynicci</a></p>
             <p>Direct Message: <a href="https://ig.me/m/nailzbynicci" target="_blank" rel="noopener noreferrer" className="text-blossom hover:underline">ig.me/m/nailzbynicci</a></p>
-            <p className="text-xs text-chrome mt-1">E-Mail: hello@nailzbynicci.de [Platzhalter für offizielle Korrespondenz]</p>
+            <p className="text-xs text-chrome mt-1">E-Mail: [E-Mail-Adresse auf Anfrage / wird ergänzt] [Platzhalter für offizielle Korrespondenz]</p>
           </section>
 
           <section className="p-6 rounded-2xl bg-fog border border-fog">

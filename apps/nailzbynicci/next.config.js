@@ -64,6 +64,18 @@ const nextConfig = {
       },
     ]
   },
+  async rewrites() {
+    return [
+      {
+        source: '/de',
+        destination: '/',
+      },
+      {
+        source: '/de/:path*',
+        destination: '/:path*',
+      },
+    ]
+  },
 }
 
 module.exports = nextConfig

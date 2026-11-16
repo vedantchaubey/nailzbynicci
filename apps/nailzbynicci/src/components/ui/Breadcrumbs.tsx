@@ -3,6 +3,7 @@
 import React from 'react'
 import Link from 'next/link'
 import { ChevronRight } from 'lucide-react'
+import { SITE_URL } from '@/lib/siteUrl'
 
 export interface BreadcrumbItem {
   name: string
@@ -21,7 +22,7 @@ export const Breadcrumbs: React.FC<BreadcrumbsProps> = ({ items }) => {
       '@type': 'ListItem',
       position: index + 1,
       name: item.name,
-      item: `https://nailzbynicci.de${item.href}`,
+      item: `${SITE_URL}${item.href}`,
     })),
   }
 
