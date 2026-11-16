@@ -14,22 +14,52 @@ const nextConfig = {
     return [
       {
         source: '/booking',
-        destination: '/how-to-book',
+        destination: '/termin-buchen',
+        permanent: true,
+      },
+      {
+        source: '/how-to-book',
+        destination: '/termin-buchen',
         permanent: true,
       },
       {
         source: '/services',
-        destination: '/prices',
+        destination: '/preise',
+        permanent: true,
+      },
+      {
+        source: '/prices',
+        destination: '/preise',
+        permanent: true,
+      },
+      {
+        source: '/gallery',
+        destination: '/galerie',
+        permanent: true,
+      },
+      {
+        source: '/about',
+        destination: '/ueber-mich',
         permanent: true,
       },
       {
         source: '/contact',
-        destination: '/how-to-book',
+        destination: '/termin-buchen',
         permanent: true,
       },
       {
         source: '/gift-cards',
-        destination: '/how-to-book',
+        destination: '/termin-buchen',
+        permanent: true,
+      },
+      {
+        source: '/legal/impressum',
+        destination: '/impressum',
+        permanent: true,
+      },
+      {
+        source: '/legal/datenschutz',
+        destination: '/datenschutz',
         permanent: true,
       },
     ]

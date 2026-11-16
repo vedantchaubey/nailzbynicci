@@ -6,6 +6,9 @@ import { pressOnItems } from '@/data/pressons'
 import { brand } from '@/data/brand'
 import { useLanguage } from '@/lib/languageContext'
 import { LazyVideoCard } from '@/components/ui/LazyVideoCard'
+import { Breadcrumbs } from '@/components/ui/Breadcrumbs'
+import { InstagramCTA } from '@/components/ui/InstagramCTA'
+import { ArrowRight, Ruler, PackageCheck } from 'lucide-react'
 
 export default function PressOnsPage() {
   const { locale, t } = useLanguage()
@@ -33,10 +36,59 @@ export default function PressOnsPage() {
     { size: 'Custom', thumb: 'Individuell', index: 'Individuell', middle: 'Individuell', ring: 'Individuell', pinky: 'Individuell' },
   ]
 
+  const breadcrumbs = [
+    { name: t('Home', 'Home'), href: '/' },
+    { name: t('Press-Ons', 'Press-ons'), href: '/press-ons' },
+  ]
+
+  const pressOnJsonLd = {
+    '@context': 'https://schema.org',
+    '@graph': [
+      {
+        '@type': 'Product',
+        name: 'Custom Reusable Press-On Nails (100% Aprés Gel-X)',
+        image: 'https://nailzbynicci.de/images/posters/Video-14378.webp',
+        description:
+          'Handcrafted custom reusable luxury press-on nails made from 100% Aprés Gel-X by Nicole in Münster. Includes full prep kit and tracked shipping within Germany.',
+        brand: {
+          '@type': 'Brand',
+          name: 'nailzbynicci',
+        },
+        offers: {
+          '@type': 'Offer',
+          price: '60.00',
+          priceCurrency: 'EUR',
+          availability: 'https://schema.org/InStock',
+          priceValidUntil: '2026-12-31',
+          shippingDetails: {
+            '@type': 'OfferShippingDetails',
+            shippingDestination: {
+              '@type': 'DefinedRegion',
+              addressCountry: 'DE',
+            },
+          },
+        },
+      },
+      ...allVideos.map((video) => ({
+        '@type': 'VideoObject',
+        name: `${video.title} - Custom Gel-X Press-On Nails`,
+        description: `Bespoke hand-painted ${video.style} luxury reusable press-on set by Nicole (@nailzbynicci).`,
+        thumbnailUrl: `https://nailzbynicci.de${video.poster}`,
+        contentUrl: `https://nailzbynicci.de${video.file}`,
+        uploadDate: '2026-11-12T12:00:00Z',
+      })),
+    ],
+  }
+
   return (
     <div className="py-16 md:py-24 bg-concrete min-h-[100dvh] text-ink">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(pressOnJsonLd) }}
+      />
       <div className="max-w-site mx-auto px-6 md:px-12">
-        
+        <Breadcrumbs items={breadcrumbs} />
+
         {/* Header */}
         <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-6 pb-6 mb-12 border-b-2 border-ink">
           <div>
@@ -61,10 +113,17 @@ export default function PressOnsPage() {
           <div className="max-w-md">
             <p className="font-sans text-sm sm:text-base text-ink/80 leading-relaxed font-medium">
               {t(
-                'Für alle, die nicht ins Homestudio nach Münster kommen können: Jedes Set wird auf originalen Aprés Gel-X Spitzen handbemalt, mehrfach versiegelt und per Post geliefert.',
-                'For clients across Germany: Each set is hand-painted on genuine Aprés Gel-X tips, fortified with high-gloss coats, and delivered with tracked shipping.'
+                'Für alle, die nicht ins Homestudio nach Münster kommen können: Jedes Set wird auf originalen Aprés Gel-X Spitzen handbemalt, mehrfach versiegelt und per versichertem DHL-Paket geliefert.',
+                'For clients across Germany: Each set is hand-painted on genuine Aprés Gel-X tips, fortified with high-gloss coats, and delivered with tracked DHL shipping.'
               )}
             </p>
+            <Link
+              href="/press-ons/bestellen"
+              className="mt-4 inline-flex items-center gap-2 font-mono text-xs uppercase tracking-widest font-black text-magenta hover:underline"
+            >
+              <span>{t('Zur Schritt-für-Schritt Bestellanleitung', 'Go to Step-by-Step Order Guide')}</span>
+              <ArrowRight className="w-4 h-4" />
+            </Link>
           </div>
         </div>
 
@@ -129,30 +188,37 @@ export default function PressOnsPage() {
           </div>
         </div>
 
-        {/* Ordering Notice Banner */}
-        <div className="bg-white border-2 border-ink p-8 sm:p-12 shadow-[6px_6px_0px_#0E0D10] text-center max-w-2xl mx-auto mb-16">
-          <span className="text-xs font-mono uppercase tracking-widest text-magenta font-black block mb-2">
-            [ HOW TO ORDER ]
-          </span>
-          <h3 className="font-sans font-black text-3xl uppercase tracking-tight text-ink">
-            {t('Individuelle Press-On Bestellung', 'Order Your Custom Press-On Set')}
-          </h3>
-          <p className="mt-3 text-xs sm:text-sm text-ink/80 mb-6 font-sans">
-            {t(
-              'Sende Nicole deine Nagelmaße und dein Wunschdesign auf Instagram DM. Bezahlung via PayPal. Versand nur innerhalb Deutschlands.',
-              'Send Nicole your millimeter measurements and inspiration photo via Instagram DM. Payment via PayPal. Shipping Germany only.'
-            )}
-          </p>
-          <a
-            href={brand.bookingUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center justify-center font-mono uppercase tracking-[0.16em] text-xs font-black px-8 py-4 bg-magenta text-white hover:bg-black transition-all border border-ink shadow-[3px_3px_0px_#0E0D10]"
+        {/* Order Guide Callout */}
+        <div className="bg-ink text-white border-2 border-ink p-8 sm:p-12 shadow-[8px_8px_0px_#FF007A] flex flex-col md:flex-row items-start md:items-center justify-between gap-6 mb-16">
+          <div>
+            <span className="text-xs font-mono uppercase tracking-widest text-magenta font-black block mb-2">
+              {t('[ SCHRITT-FÜR-SCHRITT ANLEITUNG ]', '[ STEP-BY-STEP ORDER GUIDE ]')}
+            </span>
+            <h3 className="font-sans font-black text-2xl md:text-3xl uppercase tracking-tight text-white">
+              {t('Ausführliche Bestellanleitung & Vorlage', 'Detailed Order Instructions & DM Template')}
+            </h3>
+            <p className="mt-2 text-xs sm:text-sm text-white/80 max-w-xl font-sans">
+              {t(
+                'Lerne in 2 Minuten, wie du deine Nägel ausmisst, welches Zubehör im Prep-Kit enthalten ist und wie du dein Set per 1-Klick Instagram DM bestellst.',
+                'Learn how to measure in 2 minutes, what’s inside the prep kit, and how to order with our 1-click Instagram template.'
+              )}
+            </p>
+          </div>
+          <Link
+            href="/press-ons/bestellen"
+            className="inline-flex items-center justify-center font-mono uppercase tracking-[0.16em] text-xs font-black px-8 py-4 bg-magenta text-white hover:bg-white hover:text-ink transition-all border border-white whitespace-nowrap shadow-[4px_4px_0px_#000]"
           >
-            <span>{t('Press-Ons via DM anfragen ↗', 'Inquire Press-Ons via DM ↗')}</span>
-          </a>
+            <span>{t('ZUR BESTELLANLEITUNG ↗', 'ORDER GUIDE & TEMPLATE ↗')}</span>
+          </Link>
         </div>
 
+        <InstagramCTA
+          headline={t('DEIN INDIVIDUELLES SET ANFRAGEN', 'ORDER YOUR BESPOKE PRESS-ON SET')}
+          subheadline={t(
+            'Sende Nicole deine Nagelmaße und dein Wunschdesign auf Instagram DM. Bezahlung via PayPal. Versand nur innerhalb Deutschlands.',
+            'Send Nicole your millimeter measurements and inspiration photo via Instagram DM. Payment via PayPal. Shipping Germany only.'
+          )}
+        />
       </div>
     </div>
   )

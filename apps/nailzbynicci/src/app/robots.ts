@@ -4,11 +4,24 @@ export default function robots(): MetadataRoute.Robots {
   const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://nailzbynicci.vercel.app'
 
   return {
-    rules: {
-      userAgent: '*',
-      allow: '/',
-      disallow: ['/api/'],
-    },
+    rules: [
+      {
+        userAgent: '*',
+        allow: '/',
+        disallow: ['/api/'],
+      },
+      {
+        userAgent: [
+          'Googlebot',
+          'Bingbot',
+          'Applebot',
+          'PerplexityBot',
+          'GPTBot',
+          'ChatGPT-User',
+        ],
+        allow: '/',
+      },
+    ],
     sitemap: `${baseUrl}/sitemap.xml`,
   }
 }
